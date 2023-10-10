@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6963577617725650557}
   - component: {fileID: 8507560772549887732}
-  - component: {fileID: 7246460023358279786}
+  - component: {fileID: 6825217378013992111}
   m_Layer: 0
   m_Name: Gravestone_08
   m_TagString: Untagged
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1502824291
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ceffe256ad82cf4f8c528130af61e05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7246460023358279786
-BoxCollider2D:
+--- !u!60 &6825217378013992111
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,6 +127,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.125, y: 1.625}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.13295531, y: -0.012623668}
+      - {x: 0.13401544, y: -0.014573336}
+      - {x: 0.09375, y: -0.019816518}
+      - {x: -0.27096057, y: -0.4765644}
+      - {x: -0.27136254, y: -0.47709012}
+      - {x: -0.27115107, y: -0.47749972}
+      - {x: -0.27509236, y: -0.48397171}
+      - {x: -0.30240107, y: -0.6323836}
+      - {x: -0.28939605, y: -0.67721045}
+      - {x: -0.20612645, y: -0.66944563}
+      - {x: -0.07512355, y: -0.66944563}
+      - {x: 0.2685647, y: -0.24956822}
+      - {x: 0.27639127, y: -0.22670555}
+      - {x: 0.25038123, y: -0.12733412}
+  m_UseDelaunayMesh: 0

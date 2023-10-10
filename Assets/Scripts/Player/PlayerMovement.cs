@@ -17,10 +17,14 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 moveDir;
 
+    [HideInInspector]
+    public Vector2 lastMovedDirVector;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        lastMovedDirVector = new Vector2(1, 0f); // default
     }
 
     // Update is called once per frame
@@ -45,13 +49,19 @@ public class PlayerMovement : MonoBehaviour
         if (moveDir.x != 0)
         {
             lastHorizontalVector = moveDir.x;
+            lastMovedDirVector = new Vector2(lastHorizontalVector, 0f); //last moved in x dir
         }
 
         if (moveDir.y != 0)
         {
             lastVerticalVector = moveDir.y;
+            lastMovedDirVector = new Vector2(0f, lastVerticalVector);
         }
 
+        if (moveDir.x != 0 && moveDir.y != 0)
+        {
+            lastMovedDirVector = new Vector2(lastHorizontalVector, lastVerticalVector); //while character is moving
+        }
     }
 
     void Move()
