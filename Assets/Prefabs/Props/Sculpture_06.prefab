@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 6972690861001061248}
   - component: {fileID: 526452170831598033}
   - component: {fileID: 2907050774977324742}
+  - component: {fileID: 3753861487306212972}
+  - component: {fileID: -2267617059958158302}
   m_Layer: 0
   m_Name: Sculpture_06
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +145,32 @@ PolygonCollider2D:
       - {x: 0.77709925, y: -0.6551528}
       - {x: -0.37885773, y: -0.7439123}
   m_UseDelaunayMesh: 0
+--- !u!114 &3753861487306212972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095876093846719039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e14beeb05f0a642bff4e086a52d29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &-2267617059958158302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095876093846719039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d50885efcbfa2479adf6ab70222593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Heart
+    itemPrefab: {fileID: 2664256377365503261, guid: c1ae02379d9d97b458c1c5bb2baca532, type: 3}
+    dropRate: 100

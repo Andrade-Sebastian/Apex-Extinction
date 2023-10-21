@@ -290,6 +290,8 @@ GameObject:
   - component: {fileID: 571670533}
   - component: {fileID: 571670535}
   - component: {fileID: 571670534}
+  - component: {fileID: 571670536}
+  - component: {fileID: 571670537}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -450,11 +452,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325a0b73b13c7b343ac1d3c1488e541e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   lastHorizontalVector: 0
   lastVerticalVector: 0
   moveDir: {x: 0, y: 0}
   lastMovedDirVector: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: 832c2c788ba971c47a33ce32b3d55968, type: 2}
 --- !u!95 &571670534
 Animator:
   serializedVersion: 5
@@ -486,6 +488,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e0cda7d74dc23c4186372a2c22e25c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &571670536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571670528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f8ec3373545414590fe9386f5a212d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 832c2c788ba971c47a33ce32b3d55968, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 0
+  invincibilityDuration: 0.5
+  levelRanges:
+  - startLevel: 1
+    endLevel: 3
+    experienceCapIncrease: 100
+  - startLevel: 4
+    endLevel: 5
+    experienceCapIncrease: 200
+--- !u!114 &571670537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571670528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f665ed962b7d349afb05de3e9bfea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &680786889

@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 7168456638498251089}
   - component: {fileID: 4716646193248221921}
   - component: {fileID: 7135874023075472200}
+  - component: {fileID: 5199731925464626151}
+  - component: {fileID: 2986787492610331603}
   m_Layer: 0
   m_Name: Sculpture_02
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,3 +122,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0.02684054, y: -1.2599872}
   m_Size: {x: 1.7714343, y: 0.95856225}
   m_Direction: 1
+--- !u!114 &5199731925464626151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383433147177172680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e14beeb05f0a642bff4e086a52d29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &2986787492610331603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383433147177172680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d50885efcbfa2479adf6ab70222593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Heart
+    itemPrefab: {fileID: 2664256377365503261, guid: c1ae02379d9d97b458c1c5bb2baca532, type: 3}
+    dropRate: 100
