@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public EnemyScriptableObject enemyData;
+    EnemyStats enemy;
     Transform player;
 
     // Start is called before the first frame update
     void Start()
     {
+        enemy = GetComponent<EnemyStats>();
         player = FindObjectOfType<PlayerMovement>().transform;
     }
 
@@ -17,6 +18,6 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         // Moves the enemy toward the player
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemyData.MoveSpeed * Time.deltaTime); 
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemy.currentMoveSpeed * Time.deltaTime); 
     }
 }

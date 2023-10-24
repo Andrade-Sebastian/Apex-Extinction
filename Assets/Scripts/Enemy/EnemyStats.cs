@@ -5,10 +5,13 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public EnemyScriptableObject enemyData;
-    // Current Stats
-    float currentMoveSpeed;
-    float currentHealth;
-    float currentDamage;
+    // Current
+    [HideInInspector]
+    public float currentMoveSpeed;
+    [HideInInspector]
+    public float currentHealth;
+    [HideInInspector]
+    public float currentDamage;
 
     void Awake(){
         currentMoveSpeed = enemyData.MoveSpeed;
@@ -28,7 +31,7 @@ public class EnemyStats : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionStay2D(Collision col)
+    private void OnCollisionStay2D(Collision2D col)
     {
         if(col.gameObject.CompareTag("Player"))
         {
