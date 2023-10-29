@@ -17,19 +17,26 @@ public class ProjectileWeaponBehavior : MonoBehaviour
     protected float currentCooldownDuration;
     protected float currentPierce;
 
-    void Awake(){
+    void Awake()
+    {
         currentDamage = weaponData.Damage;
         currentSpeed = weaponData.Speed;
         currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce = weaponData.Pierce;
     }
 
+    public float GetCurrentDamage()
+    {
+        return currentDamage *= FindObjectOfType<PlayerStats>().currentMight;
+    }
+
+
     protected virtual void Start()
     {
         Destroy(gameObject, destroyAfterSeconds);
     }
 
-    
+
 
     public void DirectionChecker(Vector3 dir)
     {
@@ -40,7 +47,7 @@ public class ProjectileWeaponBehavior : MonoBehaviour
         Vector3 scale = transform.localScale;
         Vector3 rotation = transform.rotation.eulerAngles;
 
-        if (dirx < 0 && diry == 0 )// if we are facing left 
+        if (dirx < 0 && diry == 0)// if we are facing left 
         {
             //reverse the sprite to face the left
             scale.x = scale.x * -1;
@@ -81,28 +88,31 @@ public class ProjectileWeaponBehavior : MonoBehaviour
         transform.rotation = Quaternion.Euler(rotation); //converting
 
     }
-    protected virtual void OnTriggerEnter2D(Collider2D col){
+    protected virtual void OnTriggerEnter2D(Collider2D col)
+    {
         //reference the script from the collided collider and deal damage using TakeDamage()
-        if(col.CompareTag("Enemy")){
+        if (col.CompareTag("Enemy"))
+        {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage); //make sure to use currentDamage instead of weaponData.damge in case any damage multipliers set in the future
+            enemy.TakeDamage(GetCurrentDamage()); //make sure to use GetCurrentDamage() instead of weaponData.damge in case any damage multipliers set in the future
             ReducePierce();
         }
         else if (col.CompareTag("Prop"))
         {
-            if(col.gameObject.TryGetComponent(out BreakableProps breakable))
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
                 ReducePierce();
             }
         }
     }
 
-    void ReducePierce(){ //destroy once the pierce reaches 0
-    currentPierce--;
-    if(currentPierce <= 0)
-    {
-        Destroy(gameObject);
-    }
+    void ReducePierce()
+    { //destroy once the pierce reaches 0
+        currentPierce--;
+        if (currentPierce <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

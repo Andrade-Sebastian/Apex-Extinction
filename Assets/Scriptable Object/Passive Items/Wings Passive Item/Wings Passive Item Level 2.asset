@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935d1bab4ce0fc642ba49d2430bcb390, type: 3}
-  m_Name: Knife Weapon
+  m_Script: {fileID: 11500000, guid: 952bd055207193d439c1b3f7009dca1d, type: 3}
+  m_Name: Wings Passive Item Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6130294311469991540, guid: 8b0e417433ba2524887df6d9c5083ee8, type: 3}
-  damage: 5
-  speed: 10
-  cooldownDuration: 2
-  pierce: 1
+  multipler: 75
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 317044439, guid: f5401bc4ea1f3804f8e29ffb9b0a048b, type: 3}

@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 037a531b18154574ea879100fafa3f4a, type: 3}
-  m_Name: Soldier Character
+  m_Script: {fileID: 11500000, guid: 952bd055207193d439c1b3f7009dca1d, type: 3}
+  m_Name: Spinach Passive Item Level 2
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 3112246900341213727, guid: 4e637fbfe8337481bb6a7e46e8ea14ff, type: 3}
-  maxHealth: 1000
-  recovery: 5
-  moveSpeed: 5
-  might: 1
-  projectileSpeed: 0
-  magnet: 1.5
+  multipler: 150
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: -664055504, guid: f5401bc4ea1f3804f8e29ffb9b0a048b, type: 3}
