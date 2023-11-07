@@ -32,6 +32,14 @@ public class WeaponScriptableObject : ScriptableObject
     public GameObject NextLevelPrefab { get => nextLevelPrefab; private set => nextLevelPrefab = value; }
 
     [SerializeField]
+    new string name;
+    public string Name {get => name; private set => name = value; }
+    
+    [SerializeField]
+    new string description; //What is the description of this weapon? 
+    public string Description {get => description; private set => description = value; }
+
+    [SerializeField]
     Sprite icon;
     public Sprite Icon { get => icon; private set => icon = value; }
 

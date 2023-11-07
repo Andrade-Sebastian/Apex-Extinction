@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     {
         Gameplay,
         Paused,
-        GameOver
+        GameOver,
+        LevelUp
     }
 
     //stores the current state of the game
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     [Header("Screens")]
     public GameObject pauseScreen;
     public GameObject resultsScreen;
+    public GameObject levelUpScreen;
 
     [Header("Current Stat Displays")]
     //current stat displays
@@ -46,6 +48,11 @@ public class GameManager : MonoBehaviour
     public Text stopwatchDisplay;
 
     public bool isGameOver = false;
+
+    //Flag to check if the player is choosing their upgrades
+    public bool choosingUpgrade;
+
+    public GameObject playerObject;
 
 
     void Awake()
@@ -87,6 +94,15 @@ public class GameManager : MonoBehaviour
                     DisplayResults();
                 }
                 break;
+            case GameState.LevelUp:
+                if(!choosingUpgrade)
+                {
+                    choosingUpgrade = true;
+                    Time.timeScale = 0f; //Pause the game for now
+                    Debug.Log("Upgrades shown");
+                    levelUpScreen.SetActive(true);
+                }
+                break;    
 
             default:
                 Debug.Log("Current state does not exist");
@@ -149,6 +165,7 @@ public class GameManager : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         resultsScreen.SetActive(false);
+        levelUpScreen.SetActive(false);
     }
 
     public void GameOver()
@@ -237,5 +254,19 @@ public class GameManager : MonoBehaviour
 
         //Update the stopwatch text to display the elapsed time
         stopwatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void StartLevelUp()
+    {
+        ChangeState(GameState.LevelUp);
+        playerObject.SendMessage("RemoveAndApplyUpgrades");
+    }
+
+    public void EndLevelUp()
+    {
+        choosingUpgrade = false;
+        Time.timeScale = 1f; // Resumes the game
+        levelUpScreen.SetActive(false);
+        ChangeState(GameState.Gameplay);
     }
 }
