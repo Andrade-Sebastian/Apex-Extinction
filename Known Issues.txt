@@ -1,0 +1,15 @@
+-----------INVENTORY------------
+1. Spinach sprite in inventory appears squished/tiny
+2. Knife weapon sprite in inventory does not fully appear
+
+----------GAMEPLAY--------------
+
+
+-----------AUDIO-----------------
+
+
+
+-----------DISPLAY----------------
+1. Sculpture_9 appears in wrong layer
+
+-----------CRASHES---------------
