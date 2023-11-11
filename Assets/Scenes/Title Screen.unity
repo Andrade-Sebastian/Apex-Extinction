@@ -1945,7 +1945,9 @@ PrefabInstance:
       value: Terrain Chunk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1255267179960483601, guid: 6a29d5eee0c9d6240b187475ee394ce6, type: 3}
+    - {fileID: 611370401345110559, guid: 6a29d5eee0c9d6240b187475ee394ce6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a29d5eee0c9d6240b187475ee394ce6, type: 3}
