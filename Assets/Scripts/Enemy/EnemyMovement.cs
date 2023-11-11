@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     EnemyStats enemy;
     Transform player;
+
+    Vector2 knockbackVelocity;
+    float knockbackDuration;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +19,23 @@ public class NewBehaviourScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { //if currently being knocked back, then proccess the knockback.
+        if(knockbackDuration > 0)
+        {
+            transform.position += (Vector3)knockbackVelocity * Time.deltaTime;
+            knockbackDuration -= Time.deltaTime;
+        }
+        else{
         // Moves the enemy toward the player
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemy.currentMoveSpeed * Time.deltaTime); 
+        }
+    }
+
+    public void Knockback(Vector2 velocity, float duration)
+    {
+        if(knockbackDuration > 0) return;
+
+        knockbackVelocity = velocity;
+        knockbackDuration = duration;
     }
 }
