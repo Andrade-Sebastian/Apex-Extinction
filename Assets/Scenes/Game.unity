@@ -2388,6 +2388,23 @@ MonoBehaviour:
       enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 1824393245034903385, guid: c9e36d68c29704b3d8b6b4a11c6e77d1, type: 3}
+    - enemyName: Zombie
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 8986576386420176195, guid: a7ffbde1a1747824d89fec12cdae33ea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 0
+      spawnCount: 0
+      enemyPrefab: {fileID: 1824393245034903385, guid: c9e36d68c29704b3d8b6b4a11c6e77d1, type: 3}
+    - enemyName: Necromancer
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 3264751425560155930, guid: 2f89f04c4d67dae47a095c77bc93468a, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
