@@ -162,9 +162,26 @@ public class GameManager : MonoBehaviour
         while(t < duration)
         {
             yield return w;
+
+            if (rect == null)
+            {
+                // Handle the case where the RectTransform is destroyed or null
+                Destroy(textObj); // Clean up the temporary object
+                yield break; // Exit the coroutine
+            }
+
             t += Time.deltaTime;
             tmPro.color = new Color(tmPro.color.r, tmPro.color.g, tmPro.color.b, 1-t / duration);
             yOffset += speed * Time.deltaTime;
+
+            // Check if the target transform is still valid
+            if (target == null)
+            {
+                // Handle the case where the target is destroyed or null
+                Destroy(textObj); // Clean up the temporary object
+                yield break; // Exit the coroutine
+            }
+
             rect.position = referenceCamera.WorldToScreenPoint(target.position + new Vector3(0,yOffset));
        }
     }
