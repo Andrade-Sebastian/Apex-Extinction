@@ -5,8 +5,8 @@ public class NecromancerBossMoves : MonoBehaviour
 {
     public EnemyStats enemyData;
     public GameObject prefabToInstantiate;
-    public float dashCooldown = 5.0f;
-    public float dashDuration = 0.01f;
+    public float dashCooldown;
+    public float dashDuration;
     private bool isDashing = false;
     private bool isSpawning = false;
     private float normalSpeed;
@@ -16,7 +16,6 @@ public class NecromancerBossMoves : MonoBehaviour
     {
         enemyData = GetComponent<EnemyStats>();
         normalSpeed = enemyData.currentMoveSpeed;
-        StartCoroutine(DashMove());
     }
 
     void Update()
@@ -57,5 +56,4 @@ public class NecromancerBossMoves : MonoBehaviour
 
         isSpawning = false;
     }
-
 }

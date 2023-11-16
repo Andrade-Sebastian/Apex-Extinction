@@ -216,4 +216,4 @@ MonoBehaviour:
   enemyData: {fileID: 0}
   prefabToInstantiate: {fileID: 8986576386420176195, guid: a7ffbde1a1747824d89fec12cdae33ea, type: 3}
   dashCooldown: 5
-  dashDuration: 0.01
+  dashDuration: 1
