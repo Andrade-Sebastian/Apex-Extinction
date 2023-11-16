@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6599532953072436325}
   - component: {fileID: 347821358216677923}
   - component: {fileID: 5161574817086929813}
+  - component: {fileID: 8505332286132958459}
   m_Layer: 0
   m_Name: Necromancer
   m_TagString: Enemy
@@ -200,3 +201,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+--- !u!114 &8505332286132958459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264751425560155930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72504493809d6bc4382b0b9663736b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 0}
+  prefabToInstantiate: {fileID: 8986576386420176195, guid: a7ffbde1a1747824d89fec12cdae33ea, type: 3}
+  dashCooldown: 5
+  dashDuration: 0.01
