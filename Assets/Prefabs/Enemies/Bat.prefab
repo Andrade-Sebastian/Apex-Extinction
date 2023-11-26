@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2101218497044511079}
   - component: {fileID: 2574647658550288949}
   - component: {fileID: -2116734689196416739}
+  - component: {fileID: 2136886310725354867}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -206,3 +207,30 @@ MonoBehaviour:
   - name: Chest
     itemPrefab: {fileID: 873386661709096205, guid: 516c3d30839a044fdaf705319d84ee74, type: 3}
     dropRate: 10
+--- !u!50 &2136886310725354867
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824393245034903385}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
