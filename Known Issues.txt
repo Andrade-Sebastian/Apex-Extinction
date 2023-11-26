@@ -14,6 +14,6 @@
 
 
 -----------DISPLAY----------------
-1. Sculpture_9 appears in wrong layer
+
 
 -----------CRASHES---------------
