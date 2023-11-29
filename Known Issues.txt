@@ -1,7 +1,6 @@
 -----------INVENTORY------------
 1. Spinach sprite in inventory appears squished/tiny
 2. Knife weapon sprite in inventory does not fully appear
-3. Enemies are stacked and appear as 1 enemy when there are multiple. 
 4. Time limit is set to only 1 minute and 15 seconds, increase to maybe 10 minutes to survive.
 5. Boss arrives in the first few seconds, make it so boss arrives after a certain amount of time or when a key is acquired.
 
