@@ -11,10 +11,8 @@ GameObject:
   - component: {fileID: 9101018742490948938}
   - component: {fileID: 917029922638502980}
   - component: {fileID: 3971787533139299883}
-  - component: {fileID: 1084340053644923146}
   - component: {fileID: 4559496866293249753}
   - component: {fileID: 3591071616147518604}
-  - component: {fileID: -5085932989867058188}
   m_Layer: 0
   m_Name: Bone
   m_TagString: Untagged
@@ -116,20 +114,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &1084340053644923146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270518008495871783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1309cebdc3cb3b940a5abab3a1d54435, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vomit: {fileID: 0}
-  vomitPos: {fileID: 0}
 --- !u!114 &4559496866293249753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,23 +172,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.27}
   m_EdgeRadius: 0
---- !u!114 &-5085932989867058188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270518008495871783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a517838dbed294fb88f68ef82f2fb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: d619b45d2ac9047c8afe4e9669ea88b8, type: 2}
-  currentMoveSpeed: 0
-  currentHealth: 0
-  currentDamage: 0
-  despawnDistance: 20
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6

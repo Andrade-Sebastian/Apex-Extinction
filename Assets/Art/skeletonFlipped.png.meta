@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f82726fd7c42f40748d09188174ad90b
+guid: 644431a130ed94f92ad6f922f4dd3bae
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,127 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton Walk_0
+      name: skeletonFlipped_0
       rect:
         serializedVersion: 2
-        x: 91
+        x: 90
+        y: 680
+        width: 120
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031a6362711ad475784dbcce79e5e41e
+      internalID: 1296411803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeletonFlipped_1
+      rect:
+        serializedVersion: 2
+        x: 410
         y: 680
         width: 140
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48bbef0b6e9d6459d838e8ecfbb86de9
-      internalID: 1585540932
+      spriteID: d19bd92fef6a640aaaf579850fb645ae
+      internalID: -1291789619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Walk_1
+      name: skeletonFlipped_2
       rect:
         serializedVersion: 2
-        x: 430
-        y: 681
-        width: 120
-        height: 230
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3aa40ea7a5c5e4485a7c3a7963ffe590
-      internalID: 748226586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Walk_2
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 360
-        width: 70
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6877777db2034cc291a6995e3fd8c06
-      internalID: -300505619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton Walk_3
-      rect:
-        serializedVersion: 2
-        x: 430
+        x: 100
         y: 360
         width: 110
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f022deb2e979445db55485526779278
-      internalID: 902070177
+      spriteID: 559748dc3da634c3c983c3f750041efc
+      internalID: 1955279051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Walk_4
+      name: skeletonFlipped_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 360
+        width: 70
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875615487b7df4a6096cdd7b2bde02f8
+      internalID: -1607472027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeletonFlipped_4
       rect:
         serializedVersion: 2
         x: 110
         y: 40
-        width: 120
-        height: 230
+        width: 90
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e072ed2bdb3824c6980c09f72af9f591
-      internalID: -1903761300
+      spriteID: 09dd4fdc8db364874befba3e2642bbb6
+      internalID: -851284530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Walk_5
+      name: skeletonFlipped_5
       rect:
         serializedVersion: 2
-        x: 440
+        x: 410
         y: 40
-        width: 90
-        height: 240
+        width: 120
+        height: 230
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0f297943c77b4bb98f5ac291fe72b99
-      internalID: 1196319459
+      spriteID: 66684d0d0f9e74a23930c1502bf83f01
+      internalID: 1806799843
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Skeleton Walk_0: 1585540932
-      Skeleton Walk_1: 748226586
-      Skeleton Walk_2: -300505619
-      Skeleton Walk_3: 902070177
-      Skeleton Walk_4: -1903761300
-      Skeleton Walk_5: 1196319459
+      skeletonFlipped_0: 1296411803
+      skeletonFlipped_1: -1291789619
+      skeletonFlipped_2: 1955279051
+      skeletonFlipped_3: -1607472027
+      skeletonFlipped_4: -851284530
+      skeletonFlipped_5: 1806799843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
