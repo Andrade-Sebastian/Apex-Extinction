@@ -26,7 +26,7 @@ public class EnemyBullet : MonoBehaviour
     {
         timer += Time.deltaTime;
         //destroy the bullet after 10 secs
-        if (timer > 5)
+        if (timer > 10)
         {
             Destroy(gameObject);
         }
@@ -36,7 +36,7 @@ public class EnemyBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //bullet disappears upon colliding with the player
-        if (collision.gameObject.CompareTag ("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             //player takes 30 damage and then the bullet dissapears
             PlayerStats player = collision.gameObject.GetComponent<PlayerStats>();
