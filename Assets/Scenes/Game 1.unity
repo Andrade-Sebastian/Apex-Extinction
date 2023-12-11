@@ -2397,7 +2397,7 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Grunt
-      enemyCount: 5
+      enemyCount: 2
       spawnCount: 0
       enemyPrefab: {fileID: 9113230259210919651, guid: 595a109cffd7c0e40af3a5b682fed4c4, type: 3}
     - enemyName: Alien Commander
@@ -2408,6 +2408,10 @@ MonoBehaviour:
       enemyCount: 2
       spawnCount: 0
       enemyPrefab: {fileID: 45376159206934695, guid: 9d64a1ead210345b5a6ea1929bec22fa, type: 3}
+    - enemyName: Bat Bomber
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 6540755239796792669, guid: a633a37b1b0245e4aac3ed213ea1227e, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
