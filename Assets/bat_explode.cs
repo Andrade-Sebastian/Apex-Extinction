@@ -53,7 +53,7 @@ public class BatController : MonoBehaviour
 
    
     StartCoroutine(DestroyExplosion(explosion));
-
+    Destroy(explosion, 1.0f);
   
     Destroy(gameObject);
 }
