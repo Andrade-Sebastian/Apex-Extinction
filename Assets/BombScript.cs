@@ -6,15 +6,25 @@ public class BombScript : MonoBehaviour
     public float explosionForce = 10f;
     public float fuseDuration = 3f;
     public GameObject explosionPrefab; // Reference to the explosion prefab
+    public AudioClip explosionSound;
+    private AudioSource audioSource;
+    
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         // Start the fuse countdown
         Invoke("Explode", fuseDuration);
     }
 
     void Explode()
     {
+
+        if (audioSource != null && explosionSound != null)
+        {
+            audioSource.PlayOneShot(explosionSound);
+        }
+
         // Instantiate the explosion prefab
         GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 

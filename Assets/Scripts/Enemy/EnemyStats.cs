@@ -23,6 +23,9 @@ public class EnemyStats : MonoBehaviour
     Color originalColor;
     SpriteRenderer sr;
     EnemyMovement movement;
+    [Header("Sound Effects")]
+    public AudioClip explosionSound; // Reference to the explosion sound
+    private AudioSource audioSource;
 
 
     void Awake(){
@@ -74,6 +77,10 @@ public class EnemyStats : MonoBehaviour
     }
 
     public void Kill(){
+        if (audioSource != null && explosionSound != null)
+        {
+            audioSource.PlayOneShot(explosionSound);
+        }
         StartCoroutine(KillFade());
     }
 
