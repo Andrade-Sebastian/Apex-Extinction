@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935d1bab4ce0fc642ba49d2430bcb390, type: 3}
-  m_Name: Knife Weapon
+  m_Name: Minigun Weapon
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6130294311469991540, guid: 8b0e417433ba2524887df6d9c5083ee8, type: 3}
+  prefab: {fileID: 1513721021138383003, guid: 26bae76e2ca2226498df61132f554e88, type: 3}
   damage: 5
   speed: 10
-  cooldownDuration: 3
+  cooldownDuration: 0.1
   pierce: 1
-  level: 1
-  nextLevelPrefab: {fileID: 3112246900341213727, guid: 6778ad58d46621a4d9a6224b3f2814fb, type: 3}
-  name: Knife
-  description: Shoots knives in the direction the player is facing
-  icon: {fileID: -1525176667, guid: 5e694604ad25d4c059af556890fb1609, type: 3}
+  level: 0
+  nextLevelPrefab: {fileID: 0}
+  name: Minigun
+  description: A minigun. Hell. Yeah.
+  icon: {fileID: -192201608, guid: 5e694604ad25d4c059af556890fb1609, type: 3}
   evolvedUpgradeToRemove: 0
