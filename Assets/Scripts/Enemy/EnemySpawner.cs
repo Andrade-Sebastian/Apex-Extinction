@@ -39,10 +39,14 @@ public class EnemySpawner : MonoBehaviour
     [Header("Spawn Positions")]
     public List<Transform> relativeSpawnPoints; //A list to store all the relative spawn points of enemies
 
-    Transform player; 
+    Transform player;
+
+
     // Start is called before the first frame update
     void Start()
     {
+      
+
         player = FindObjectOfType<PlayerStats>().transform;
         CalculateWaveQuota();
     }
@@ -128,8 +132,11 @@ public class EnemySpawner : MonoBehaviour
         //Decrement the number of enemies alive
         enemiesAlive--;
 
+        //UI kill counter 
+        Debug.Log("Enemy killed");
+
         //Reset the maxEnemiesReached flag if the number of enemies alive has dropped below the maximum amount
-        if(enemiesAlive < maxEnemiesAllowed)
+        if (enemiesAlive < maxEnemiesAllowed)
         {
             maxEnemiesReached = false;
         }

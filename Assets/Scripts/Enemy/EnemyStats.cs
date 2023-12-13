@@ -27,6 +27,8 @@ public class EnemyStats : MonoBehaviour
     public AudioClip explosionSound; // Reference to the explosion sound
     private AudioSource audioSource;
 
+    //KillCounter reference
+    private KillCounter killCounter;
 
     void Awake(){
         currentMoveSpeed = enemyData.MoveSpeed;
@@ -36,11 +38,18 @@ public class EnemyStats : MonoBehaviour
     
     void Start()
     {
+        killCounter = FindObjectOfType<KillCounter>();
+
+        if (killCounter == null)
+        {
+            Debug.LogError("KillCounter script not found! Make sure it is attached to a GameObject in the scene.");
+        }
         player = FindObjectOfType<PlayerStats>().transform;
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
 
         movement = GetComponent<EnemyMovement>();
+
     }
 
     void Update(){
@@ -65,6 +74,7 @@ public class EnemyStats : MonoBehaviour
             movement.Knockback(dir.normalized * knockbackForce, knockbackDuration);
         }
         if(currentHealth <= 0){
+
             Kill();
         }
     }
@@ -77,6 +87,10 @@ public class EnemyStats : MonoBehaviour
     }
 
     public void Kill(){
+        killCounter.IncrementKillCount();
+        //UI kill counter 
+        Debug.Log("Enemy killed");
+
         if (audioSource != null && explosionSound != null)
         {
             audioSource.PlayOneShot(explosionSound);
