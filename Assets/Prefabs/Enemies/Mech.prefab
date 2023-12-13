@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6313723666873078475}
   - component: {fileID: 969458946403614637}
   - component: {fileID: 9007855737301923669}
+  - component: {fileID: -3846540636055608023}
   m_Layer: 0
   m_Name: Mech
   m_TagString: Enemy
@@ -172,6 +173,7 @@ MonoBehaviour:
   damageColor: {r: 0.07035971, g: 1, b: 0, a: 1}
   damageFlashDuration: 0.2
   deathFadeTime: 0.6
+  explosionSound: {fileID: 0}
 --- !u!114 &6313723666873078475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +246,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.24}
   m_EdgeRadius: 0
+--- !u!114 &-3846540636055608023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45376159206934695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d50885efcbfa2479adf6ab70222593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Blue gem
+    itemPrefab: {fileID: 5425549552286787975, guid: 4aa42597058d93d448366aeef03bb468, type: 3}
+    dropRate: 100
 --- !u!1 &6726245961021724794
 GameObject:
   m_ObjectHideFlags: 0

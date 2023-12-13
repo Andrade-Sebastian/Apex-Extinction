@@ -15,6 +15,6 @@ MonoBehaviour:
   multipler: 75
   level: 2
   nextLevelPrefab: {fileID: 0}
-  name: Wings Level 2
+  name: Speed Relic II
   description: Increases movement speed by 75%
   icon: {fileID: 317044439, guid: f5401bc4ea1f3804f8e29ffb9b0a048b, type: 3}

@@ -19,6 +19,7 @@ MonoBehaviour:
   pierce: 0
   level: 1
   nextLevelPrefab: {fileID: 1105870985173915013, guid: e48e6bef69a44d94cb3f3c00053649db, type: 3}
-  name: Garlic
-  description: Deals damage to enemies inside the garlic
+  name: Fire Wheel
+  description: Deals damage to enemies around
   icon: {fileID: 1816041861, guid: adc18c74fdac54fe1858756d2ca09c04, type: 3}
+  evolvedUpgradeToRemove: 0

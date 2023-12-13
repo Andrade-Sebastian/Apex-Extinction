@@ -15,6 +15,6 @@ MonoBehaviour:
   multipler: 100
   level: 1
   nextLevelPrefab: {fileID: 7725967946255580927, guid: f17b2e4c9d52ec74aab835f81e358c42, type: 3}
-  name: Spinach
-  description: Increases might by 100%
+  name: Damage Relic
+  description: Increases damage by 100%
   icon: {fileID: -664055504, guid: f5401bc4ea1f3804f8e29ffb9b0a048b, type: 3}

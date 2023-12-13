@@ -19,6 +19,7 @@ MonoBehaviour:
   pierce: 0
   level: 2
   nextLevelPrefab: {fileID: 0}
-  name: Garlic Level 3
+  name: Fire Wheel III
   description: Damage up by 2
   icon: {fileID: 1816041861, guid: adc18c74fdac54fe1858756d2ca09c04, type: 3}
+  evolvedUpgradeToRemove: 0
