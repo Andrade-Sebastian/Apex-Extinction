@@ -2768,6 +2768,9 @@ MonoBehaviour:
   - passiveItemUpgradeIndex: 1
     initialPassiveItem: {fileID: 7725967946255580927, guid: 1988c72b576977a4facdca68d2fc0a11, type: 3}
     passiveItemData: {fileID: 11400000, guid: 7b01cce8fde15fa4799b208f98c354b2, type: 2}
+  - passiveItemUpgradeIndex: 2
+    initialPassiveItem: {fileID: 7570613301002372313, guid: 98d15967244fc41ef967ef78bc9a0fd1, type: 3}
+    passiveItemData: {fileID: 11400000, guid: f875105c3669c4d538cd4f8f0cadac6c, type: 2}
   upgradeUIOptions:
   - upgradeNameDisplay: {fileID: 912968933}
     upgradeDescriptionDisplay: {fileID: 921492086}

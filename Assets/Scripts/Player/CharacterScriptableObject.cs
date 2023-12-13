@@ -20,7 +20,11 @@ public class CharacterScriptableObject : ScriptableObject
 
     [SerializeField]
     float maxHealth;
-    public float MaxHealth {get => maxHealth; private set => maxHealth = value;}
+    public float MaxHealth
+    {
+        get => maxHealth;
+        set => maxHealth = value;
+    }
 
     [SerializeField]
     float recovery;
