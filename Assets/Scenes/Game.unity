@@ -2332,7 +2332,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1824393245034903385, guid: c9e36d68c29704b3d8b6b4a11c6e77d1, type: 3}
     - enemyName: Zombie Vomit
-      enemyCount: 2
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 9104387988660526854, guid: 4a4e867679ae02f45bc6e186b1b63014, type: 3}
     waveQuota: 0
@@ -2349,7 +2349,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 3264751425560155930, guid: 2f89f04c4d67dae47a095c77bc93468a, type: 3}
     - enemyName: Zombie
-      enemyCount: 200
+      enemyCount: 500
       spawnCount: 0
       enemyPrefab: {fileID: 8986576386420176195, guid: a7ffbde1a1747824d89fec12cdae33ea, type: 3}
     - enemyName: Skeleton
@@ -2361,7 +2361,7 @@ MonoBehaviour:
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 100
+  maxEnemiesAllowed: 1000
   maxEnemiesReached: 0
   waveInterval: 3
   relativeSpawnPoints:
