@@ -29,12 +29,12 @@ public class CommanderBossMoves : MonoBehaviour
     void TeleportMove()
     {
         int randomNumber = Random.Range(0, 2);
-        if(timer > 10)
+        if(timer > 15)
         {
             if(randomNumber == 0){
-                transform.position = new Vector3(playerCurPos.x + 3f, playerCurPos.y, playerCurPos.z);
+                transform.position = new Vector3(playerCurPos.x + 5f, playerCurPos.y, playerCurPos.z);
             }else{
-                transform.position = new Vector3(playerCurPos.x - 3f, playerCurPos.y, playerCurPos.z);
+                transform.position = new Vector3(playerCurPos.x - 5f, playerCurPos.y, playerCurPos.z);
             }
 
             timer = 0;
@@ -42,7 +42,7 @@ public class CommanderBossMoves : MonoBehaviour
     }
       
     void Shoot(){
-        if(bulletTimer > 2)
+        if(bulletTimer > 5)
             {
                 bulletTimer = 0;
                 Vector3 top = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);

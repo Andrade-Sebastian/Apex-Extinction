@@ -2396,7 +2396,7 @@ MonoBehaviour:
   waves:
   - waveName: Wave 1
     enemyGroups:
-    - enemyName: Grunt
+    - enemyName: Grunt (gernade)
       enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 9113230259210919651, guid: 595a109cffd7c0e40af3a5b682fed4c4, type: 3}
@@ -2409,15 +2409,19 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 45376159206934695, guid: 9d64a1ead210345b5a6ea1929bec22fa, type: 3}
     - enemyName: Bat Bomber
-      enemyCount: 10
+      enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 6540755239796792669, guid: a633a37b1b0245e4aac3ed213ea1227e, type: 3}
+    - enemyName: Grunt
+      enemyCount: 200
+      spawnCount: 0
+      enemyPrefab: {fileID: 9113230259210919651, guid: 8fe2a7e0e8758fd4cb34f6b6d4c1785a, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 100
+  maxEnemiesAllowed: 1000
   maxEnemiesReached: 0
   waveInterval: 3
   relativeSpawnPoints:
@@ -4628,7 +4632,7 @@ MonoBehaviour:
   - {fileID: 1648053604}
   - {fileID: 1399986920}
   - {fileID: 2128054831}
-  timeLimit: 300
+  timeLimit: 150
   stopwatchDisplay: {fileID: 640598497}
   isGameOver: 0
   choosingUpgrade: 0

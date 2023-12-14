@@ -17,9 +17,8 @@ GameObject:
   - component: {fileID: 4197500360958550035}
   - component: {fileID: -3973406956023099314}
   - component: {fileID: -7858851365602968943}
-  - component: {fileID: 6698852045359684777}
   m_Layer: 0
-  m_Name: Grunt Enemy
+  m_Name: Grunt Enemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,18 +246,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6698852045359684777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113230259210919651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95aea9beabc6cc04b96f4729ff9260be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bombPrefab: {fileID: 3017428409317808499, guid: 2588adb0a2318ba42b10d56bb24d8475, type: 3}
-  throwForce: 10
-  throwCooldown: 10
