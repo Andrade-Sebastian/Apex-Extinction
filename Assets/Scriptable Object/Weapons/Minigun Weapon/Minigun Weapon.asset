@@ -18,7 +18,7 @@ MonoBehaviour:
   cooldownDuration: 0.1
   pierce: 1
   level: 0
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 2703852241609003199, guid: 57727e3bbad570c40b5fa1dea1e2af71, type: 3}
   name: Minigun
   description: A minigun. Hell. Yeah.
   icon: {fileID: -192201608, guid: 5e694604ad25d4c059af556890fb1609, type: 3}
